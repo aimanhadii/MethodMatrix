@@ -1,8 +1,6 @@
 package assignment2;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 
 public class MethodMatrix {
 
@@ -41,9 +39,8 @@ public class MethodMatrix {
     }
 
     public static void writeFile(int[][] C) throws IOException {
-        Writer wr = null;
 
-        wr = new FileWriter("matrix.txt");
+        PrintWriter wr = new PrintWriter("matrix.txt");
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
